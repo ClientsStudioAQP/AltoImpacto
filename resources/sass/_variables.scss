@@ -1,0 +1,39 @@
+/*
+    Cliente: ALTO IMPACTO
+    Dev : StudioAQP  www.studioaqp.com
+    CELL: 958286668
+*/
+
+// Paleta de Colores
+$orange: #f66000;
+$white: #ffffff;
+
+// Fuentes Tipograficas
+@font-face {
+    font-family: "brandon-black";
+    src: url("/fonts/Brandon_bld.otf");
+}
+
+@font-face {
+    font-family: "cocogose-black";
+    src: url("/fonts/CocogoosePro.ttf");
+}
+
+@font-face {
+    font-family: "cocogose-italic";
+    src: url("/fonts/CocogooseProItalic.ttf");
+}
+
+.brandon-black {
+    font-family: "brandon-black";
+}
+
+.cocogose-black {
+    font-family: "cocogose-black";
+}
+
+
+
+.text-orange {
+    color: $orange;
+}
