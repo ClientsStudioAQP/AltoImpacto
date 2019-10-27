@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'PagesController@index');
+Route::get('/', 'PagesController@index')->name('inicio');
 
 //Route::get('/home', 'HomeController@index')->name('home');
 
@@ -25,6 +25,14 @@ Route::group([
         Route::get('/proyectos/nuevo', 'ElaborationController@create')->name('admin.proyectos.create');
 
         Route::post('proyectos', 'ElaborationController@store')->name('admin.proyectos.store');
+        Route::get('proyectos/{proyecto}', 'ElaborationController@edit')->name('admin.proyectos.edit');
+        Route::put('proyectos/{proyecto}', 'ElaborationController@update')->name('admin.proyectos.update');
+        Route::delete('proyectos/{proyecto}', 'ElaborationController@destroy')->name('admin.proyectos.destroy');
+
+
+        Route::post('proyectos/{proyecto}/photos', 'PhotosController@store')->name('admin.proyectos.photos.store');
+
+        Route::delete('photos/{photo}', 'PhotosController@destroy')->name('admin.photos.destroy');
     });
 
 Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');

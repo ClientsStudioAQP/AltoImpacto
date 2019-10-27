@@ -190,61 +190,14 @@
         <div class="gallery-portfolio">
             <div class="row">
                 <div id="gallery" class="" >
-
-                        @foreach($proyectos as $proyecto)
+                    @foreach($proyectos as $proyecto)
+                        @if($proyecto->photos->count() > 0)
                             <a href="{{ $proyecto->link_post }}" target="_blank" class="ug-tile-icon ug-icon-link">
-                                <img src="{{asset('/img/proyectos/credinka.jpg')}}" alt="{{ $proyecto->name }}">
+                                <img src="{{ $proyecto->photos->first()->url }}" alt="{{ $proyecto->name }}">
                             </a>
-                        @endforeach
-
-                        <a href="google.com" target="_blank" class="ug-tile-icon ug-icon-link">
-                            <img src="{{asset('/img/proyectos/credinka.jpg')}}" alt="Pluma Publicitaria Credinka">
-                        </a>
-
-                        <a href="google.com" target="_blank" class="ug-tile-icon ug-icon-link">
-                            <img src="{{asset('/img/proyectos/fia.jpg')}}" alt="Presentes en la Fia 2019">
-                        </a>
-
-                        <a href="google.com" target="_blank" class="ug-tile-icon ug-icon-link">
-                            <img src="{{asset('/img/proyectos/rosatel.jpg')}}" alt="Letrero Rosatel">
-                        </a>
-
-                        <a href="google.com" target="_blank" class="ug-tile-icon ug-icon-link">
-                            <img src="{{asset('/img/proyectos/panamericana.jpg')}}" alt="Banner para Panamericana">
-                        </a>
-
-                        <a href="google.com" target="_blank" class="ug-tile-icon ug-icon-link">
-                            <img src="{{asset('/img/proyectos/rumi.jpg')}}" alt="Activacion Rumi">
-                        </a>
-
-                        <a href="google.com" target="_blank" class="ug-tile-icon ug-icon-link">
-                            <img src="{{asset('/img/proyectos/supermix.jpg')}}" alt="BTL para Supermix">
-                        </a>
-
-                        <a href="google.com" target="_blank" class="ug-tile-icon ug-icon-link">
-                            <img src="{{asset('/img/proyectos/ucsm.jpg')}}" alt="Activacion Universidad Catolica Santa Maria">
-                        </a>
-
-                        <a href="google.com" target="_blank" class="ug-tile-icon ug-icon-link">
-                            <img src="{{asset('/img/proyectos/ucsm2.jpg')}}" alt="Teatro Universidad Catolica Santa Maria">
-                        </a>
-
-                        <a href="google.com" target="_blank" class="ug-tile-icon ug-icon-link">
-                            <img src="{{asset('/img/proyectos/vinil_perforado.jpg')}}" alt="Vinil Perforado">
-                        </a>
-
-                        <a href="google.com" target="_blank" class="ug-tile-icon ug-icon-link">
-                            <img src="http://unitegallery.net/newimages/image10.jpg" alt="Titulo Imagen 10">
-                        </a>
-
-                        <a href="google.com" target="_blank" class="ug-tile-icon ug-icon-link">
-                            <img src="http://unitegallery.net/newimages/image11.jpg" alt="Titulo Imagen 11">
-                        </a>
-
-                        <a href="google.com" target="_blank" class="ug-tile-icon ug-icon-link">
-                            <img src="http://unitegallery.net/newimages/image12.jpg" alt="Titulo Imagen 12">
-                        </a>
-                    </div>
+                        @endif
+                    @endforeach
+                </div>
             </div>
         </div>
     </div>

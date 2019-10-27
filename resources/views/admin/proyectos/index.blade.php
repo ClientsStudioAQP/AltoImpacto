@@ -14,9 +14,10 @@
     </ol>
 @stop
 @section('content')
-    <div class="box">
+    <div class="box box-success">
         <div class="box-header">
             <h3 class="box-title">Registro de Proyectos</h3>
+            <button class="btn btn-success pull-right" data-toggle="modal" data-target="#elaborationModal"><i class="fa fa-plus"></i> Agregar Nuevo Proyecto</button>
         </div>
         <!-- /.box-header -->
         <div class="box-body">
@@ -46,9 +47,15 @@
                             {{ $proyecto->updated_at }}
                         </td>
                         <td>
-                            <a href="#" class="btn btn-xs btn-info"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
-                            <a href="#" class="btn btn-xs btn-warning"><i class="fa fa-eye"></i></a>
+                            <a href="{{ route('inicio') }}" class="btn btn-xs btn-warning"><i class="fa fa-eye"></i></a>
+                            <a href="{{ route('admin.proyectos.edit', $proyecto) }}" class="btn btn-xs btn-info"><i class="fa fa-pencil"></i></a>
+                            <form method="post" action="{{ route('admin.proyectos.destroy', $proyecto) }}" style="display: inline">
+                                @csrf
+                                {{ method_field('delete') }}
+                                <button class="btn btn-xs btn-danger">
+                                    <i class="fa fa-times"></i>
+                                </button>
+                            </form>
                         </td>
                     </tr>
                 @endforeach

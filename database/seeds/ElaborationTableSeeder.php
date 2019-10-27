@@ -14,7 +14,6 @@ class ElaborationTableSeeder extends Seeder
      */
     public function run()
     {
-        Elaboration::truncate();
         Category::truncate();
         User::truncate();
 
@@ -32,18 +31,6 @@ class ElaborationTableSeeder extends Seeder
         $category = new Category;
         $category->name = "Productos";
         $category->save();
-
-        $post = new Elaboration;
-        $post->name = "Plumas Credinka";
-        $post->link_post = "https://www.facebook.com/altoimpactopublicidad/photos/a.167588033269624/2750515281643540/?type=3&theater";
-        $post->category_id = 1;
-        $post->save();
-
-        $post = new Elaboration;
-        $post->name = "Teatro Universidad Catolica San Pablo";
-        $post->link_post = "https://www.facebook.com/altoimpactopublicidad/photos/a.167588033269624/2853477691347298/?type=3&theater";
-        $post->category_id = 2;
-        $post->save();
         // $this->call(UsersTableSeeder::class);
     }
 }
