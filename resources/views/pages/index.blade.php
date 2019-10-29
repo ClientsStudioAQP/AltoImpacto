@@ -3,18 +3,12 @@
 @push('styles')
     <link rel="stylesheet" href="{{asset('/css/unite-gallery.css')}}">
     <link rel="stylesheet" href="{{asset('/css/ug-theme-default.css')}}">
-@endpush
-
 @section('content')
-
-
-
     <div class="go-cotization-button">
         <a href="#">
             <h2>Cotiza tu Proyecto</h2>
         </a>
     </div>
-
 
     <div class="welcome-container">
         <div class="row justify-content-center">
@@ -202,6 +196,49 @@
         </div>
     </div>
 
+    <div class="row">
+        <div class="cotization-form-container">
+            <div class="justify-content-center">
+                <div class="offset-md-2 col-8">
+                    <div class="row">
+                        <div class="col-5 d-none d-sm-block form-img-airplane">
+                            <img src="{{ asset('/img/avion-naranja.png') }}" alt="">
+                        </div>
+                        <div class="col-7">
+                            <div class="form-container">
+                                <div class="form-title">
+                                    <h1>Cotizemos tu proyecto</h1>
+                                    <h2>lorem ipsum</h2>
+                                </div>
+                                <div class="form-panel">
+                                    <form action="#">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control-custom" />
+                                            <label>Nombre</label>
+                                        </div>
+
+                                        <div class="input-group">
+                                            <input type="email" class="form-control-custom" />
+                                            <label>Email</label>
+                                        </div>
+
+                                        <div class="input-group">
+                                            <textarea class="form-control-custom"></textarea>
+                                            <label>Describe tu proyecto</label>
+                                        </div>
+
+                                        <button class="cotization-button-form">Enviar</button>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 @stop
 
 @push('scripts')
@@ -215,17 +252,39 @@
                 tile_enable_action: true,			//enable icons in mouseover mode
                 tile_show_link_icon: true,
                 tile_enable_textpanel: true,
+                tiles_include_padding: false,
                 tile_textpanel_title_text_align: "center",
                 gallery_theme: "tiles",			//choose gallery theme (if more then one themes includes)
-                gallery_width:"90%",				//gallery width
+                gallery_width:"100%",				//gallery width
                 gallery_min_width: "100%",				//gallery minimal width when resizing
                 gallery_background_color: "#ffffff",
+                theme_appearance_order: "shuffle",
                 tile_enable_overlay: true,			//enable tile color overlay (on mouseover)
                 tile_overlay_opacity: 0.4,			//tile overlay opacity
                 tile_overlay_color: "#f66000",
                 tile_textpanel_bg_opacity: 0.8,		 	//textpanel background opacity
                 tile_textpanel_bg_color:"#f66000"
             });
+        });
+
+        $(function(){
+
+            $('.form-control-custom').each(function(){
+                changeState($(this));
+            });
+
+            $('.form-control-custom').on('focusout', function(){
+                changeState($(this));
+            });
+
+            function changeState($formControl){
+                if($formControl.val().length > 0){
+                    $formControl.addClass('has-value');
+                }
+                else{
+                    $formControl.removeClass('has-value');
+                }
+            }
         });
 
     </script>

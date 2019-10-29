@@ -69,8 +69,10 @@
             </div>
 
             <div class="col-4">
-                <div class="button-cotization">
-
+                <div class="button-cotization text-center ">
+                    <a href="#" class="button-outline">
+                        <h4>Cotiza tu proyecto</h4>
+                    </a>
                 </div>
             </div>
 
