@@ -211,19 +211,20 @@
                                     <h2>lorem ipsum</h2>
                                 </div>
                                 <div class="form-panel">
-                                    <form action="#">
+                                    <form action="{{ route('contacto') }}" method="post">
+                                        @csrf
                                         <div class="input-group">
-                                            <input type="text" class="form-control-custom" />
+                                            <input name="name" type="text" class="form-control-custom" />
                                             <label>Nombre</label>
                                         </div>
 
                                         <div class="input-group">
-                                            <input type="email" class="form-control-custom" />
+                                            <input name="email" type="email" class="form-control-custom" />
                                             <label>Email</label>
                                         </div>
 
                                         <div class="input-group">
-                                            <textarea class="form-control-custom"></textarea>
+                                            <textarea name="description" class="form-control-custom"></textarea>
                                             <label>Describe tu proyecto</label>
                                         </div>
 
@@ -233,6 +234,87 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row card-estrategy-direction justify-content-center">
+        <div class=" col-7">
+            <div class="row no-gutters items-container-card">
+                <div class="col-5 img-container">
+                    <img src="{{ asset('/img/vectors/lapiz-b.png') }}" alt="">
+                </div>
+                <div class="col-7">
+                    <div class="text-container-card">
+                        <div class="title-horizontal">
+                            <h1>Direccionamiento</h1>
+                        </div>
+                        <div class="content-card row">
+                            <div class="title-vertical">
+                                <h1>Estratégico</h1>
+                            </div>
+                            <div class="content-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, architecto doloribus facere fugit incidunt ipsa itaque nemo saepe ut voluptas? Animi architecto atque esse libero recusandae ut vel vitae voluptates atque esse libero recusandae ut vel vitae voluptates.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, architecto doloribus facere fugit incidunt ipsa itaque nemo saepe ut voluptas? Animi architecto atque esse libero recusandae ut vel vitae voluptates recusandae ut vel vitae ut vel vitae voluptates recusandae ut vel vitae ut  ae voluptates recusandae ut vel vitae .</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row card-estrategy-direction justify-content-center">
+        <div class=" col-7">
+            <div class="row no-gutters items-container-card">
+                <div class="col-5 img-container">
+                    <img src="{{ asset('/img/vectors/foco-b.png') }}" alt="">
+                </div>
+                <div class="col-7">
+                    <div class="text-container-card">
+                        <div class="title-horizontal">
+                            <h1>Creatividad</h1>
+                        </div>
+                        <div class="content-card row">
+                            <div class="title-vertical">
+                                <h1>Publicitaria</h1>
+                            </div>
+                            <div class="content-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, architecto doloribus facere fugit incidunt ipsa itaque nemo saepe ut voluptas? Animi architecto atque esse libero recusandae ut vel vitae voluptates atque esse libero recusandae ut vel vitae voluptates.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, architecto doloribus facere fugit incidunt ipsa itaque nemo saepe ut voluptas? Animi architecto atque esse libero recusandae ut vel vitae voluptates recusandae ut vel vitae ut vel vitae voluptates recusandae ut vel vitae ut  ae voluptates recusandae ut vel vitae .</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row card-estrategy-direction justify-content-center">
+        <div class=" col-7">
+            <div class="row no-gutters items-container-card">
+                <div class="col-5 img-container">
+                    <img src="{{ asset('/img/vectors/cerebro-b.png') }}" alt="">
+                </div>
+                <div class="col-7">
+                    <div class="text-container-card">
+                        <div class="title-horizontal">
+                            <h1>Equipo</h1>
+                        </div>
+                        <div class="content-card row">
+                            <div class="title-vertical">
+                                <h1>Innovador</h1>
+                            </div>
+                            <div class="content-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, architecto doloribus facere fugit incidunt ipsa itaque nemo saepe ut voluptas? Animi architecto atque esse libero recusandae ut vel vitae voluptates atque esse libero recusandae ut vel vitae voluptates.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, architecto doloribus facere fugit incidunt ipsa itaque nemo saepe ut voluptas? Animi architecto atque esse libero recusandae ut vel vitae voluptates recusandae ut vel vitae ut vel vitae voluptates recusandae.</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>

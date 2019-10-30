@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'PagesController@index')->name('inicio');
+Route::post('/contact', 'MessagesController@store')->name('contacto');
 
 //Route::get('/home', 'HomeController@index')->name('home');
 

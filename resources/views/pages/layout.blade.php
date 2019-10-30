@@ -103,6 +103,12 @@
 </script>
 
 <script src="{{asset('/js/app.js')}}"></script>
+<script src="{{asset('/js/notify.js')}}" ></script>
+@if( session()->has('flash'))
+    <script>
+        $.notify("{{ session('flash') }}", "success");
+    </script>
+@endif
 @stack('scripts')
 </body>
 </html>
