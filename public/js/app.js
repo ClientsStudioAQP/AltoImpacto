@@ -36978,6 +36978,17 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/sass/AIResponsive.scss":
+/*!******************************************!*\
+  !*** ./resources/sass/AIResponsive.scss ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/sass/app.scss":
 /*!*********************************!*\
   !*** ./resources/sass/app.scss ***!
@@ -36990,15 +37001,16 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /***/ }),
 
 /***/ 0:
-/*!*********************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/AIDesktop.scss ***!
-  \*********************************************************************************************/
+/*!********************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/AIDesktop.scss ./resources/sass/AIResponsive.scss ***!
+  \********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /home/neodante/StudioAQP/Clientes/AltoImpacto/Proyectos/AI/AltoImpacto/resources/js/app.js */"./resources/js/app.js");
 __webpack_require__(/*! /home/neodante/StudioAQP/Clientes/AltoImpacto/Proyectos/AI/AltoImpacto/resources/sass/app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! /home/neodante/StudioAQP/Clientes/AltoImpacto/Proyectos/AI/AltoImpacto/resources/sass/AIDesktop.scss */"./resources/sass/AIDesktop.scss");
+__webpack_require__(/*! /home/neodante/StudioAQP/Clientes/AltoImpacto/Proyectos/AI/AltoImpacto/resources/sass/AIDesktop.scss */"./resources/sass/AIDesktop.scss");
+module.exports = __webpack_require__(/*! /home/neodante/StudioAQP/Clientes/AltoImpacto/Proyectos/AI/AltoImpacto/resources/sass/AIResponsive.scss */"./resources/sass/AIResponsive.scss");
 
 
 /***/ })

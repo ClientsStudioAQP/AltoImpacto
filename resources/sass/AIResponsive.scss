@@ -1,0 +1,100 @@
+@import 'variables';
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+@media screen and (max-width:640px) {
+    .go-cotization-button {
+        display: none;
+    }
+
+    .logo-plain {
+        top: 5px;
+        left: 5px;
+
+        img {
+            width: 70px;
+            height: 45px;
+        }
+    }
+
+    .button_container {
+        width: 50px;
+        height: 60px;
+        padding: 20px 15px 20px 15px;
+
+        span {
+            height: 3px;
+            margin-bottom: 3px;
+            margin-left: 8px;
+        }
+    }
+
+    .slider-description {
+        width: 96%;
+    }
+
+    .title-description {
+        h1 {
+            font-size: 25px;
+        }
+        h2 {
+            font-size: 18px;
+            margin-top: -10px;
+        }
+    }
+
+    .image-description {
+        text-align: center;
+
+        img {
+            margin-left: 0;
+        }
+
+        .title-description-skills {
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .about-title-container {
+        margin-top: 60px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+
+    /* PORTAFOLIO */
+
+    .title-portfolio {
+        h1 {
+            font-size: 24px;
+        }
+        h2 {
+            font-size: 18px;
+        }
+    }
+
+    .text-description-portfolio {
+        margin-top: 10px;
+        width: 85%;
+        margin-left: 20px;
+    }
+
+    .stamp-phrase {
+        margin-top: 10px;
+        margin-bottom: 55px;
+
+        .block-simple-text {
+            margin-left: 20%;
+        }
+        .block-resalt-text{
+            margin-left: 42%;
+        }
+        .go-right {
+            margin-left: 50%;
+        }
+        .points-separator {
+            text-align: center;
+            margin-left: 20px;
+        }
+    }
+}

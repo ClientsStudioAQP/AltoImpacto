@@ -1,0 +1,151 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat&display=swap);/*
+    Cliente: ALTO IMPACTO
+    Dev : StudioAQP  www.studioaqp.com
+    CELL: 958286668
+*/
+
+@font-face {
+  font-family: "kestoy";
+  src: url("/fonts/KestoySelfie.ttf");
+}
+
+@font-face {
+  font-family: "brushsci";
+  src: url("/fonts/brushsci.ttf");
+}
+
+@font-face {
+  font-family: "brandon-black";
+  src: url("/fonts/Brandon_bld.otf");
+}
+
+@font-face {
+  font-family: "brandon-regular";
+  src: url("/fonts/Brandon_reg.otf");
+}
+
+@font-face {
+  font-family: "cocogose-black";
+  src: url("/fonts/CocogoosePro.ttf");
+}
+
+@font-face {
+  font-family: "cocogose-italic";
+  src: url("/fonts/CocogooseProItalic.ttf");
+}
+
+@font-face {
+  font-family: "cocogose-light-italic";
+  src: url("/fonts/CocogooseProLightItalic.ttf");
+}
+
+.brandon-black {
+  font-family: "brandon-black";
+}
+
+.cocogose-black {
+  font-family: "cocogose-black";
+}
+
+.text-orange {
+  color: #f66000;
+}
+
+@media screen and (max-width: 640px) {
+  .go-cotization-button {
+    display: none;
+  }
+
+  .logo-plain {
+    top: 5px;
+    left: 5px;
+  }
+
+  .logo-plain img {
+    width: 70px;
+    height: 45px;
+  }
+
+  .button_container {
+    width: 50px;
+    height: 60px;
+    padding: 20px 15px 20px 15px;
+  }
+
+  .button_container span {
+    height: 3px;
+    margin-bottom: 3px;
+    margin-left: 8px;
+  }
+
+  .slider-description {
+    width: 96%;
+  }
+
+  .title-description h1 {
+    font-size: 25px;
+  }
+
+  .title-description h2 {
+    font-size: 18px;
+    margin-top: -10px;
+  }
+
+  .image-description {
+    text-align: center;
+  }
+
+  .image-description img {
+    margin-left: 0;
+  }
+
+  .image-description .title-description-skills {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .about-title-container {
+    margin-top: 60px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  /* PORTAFOLIO */
+
+  .title-portfolio h1 {
+    font-size: 24px;
+  }
+
+  .title-portfolio h2 {
+    font-size: 18px;
+  }
+
+  .text-description-portfolio {
+    margin-top: 10px;
+    width: 85%;
+    margin-left: 20px;
+  }
+
+  .stamp-phrase {
+    margin-top: 10px;
+    margin-bottom: 55px;
+  }
+
+  .stamp-phrase .block-simple-text {
+    margin-left: 20%;
+  }
+
+  .stamp-phrase .block-resalt-text {
+    margin-left: 42%;
+  }
+
+  .stamp-phrase .go-right {
+    margin-left: 50%;
+  }
+
+  .stamp-phrase .points-separator {
+    text-align: center;
+    margin-left: 20px;
+  }
+}
+

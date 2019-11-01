@@ -5,8 +5,9 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{asset('/css/AIDesktop.css')}}">
     <link rel="stylesheet" href="{{asset('/css/app.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/AIDesktop.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/AIResponsive.css')}}">
     <script src="https://kit.fontawesome.com/6e4a5b8031.js" crossorigin="anonymous"></script>
 
     @stack('styles')
@@ -31,11 +32,11 @@
                 </a>
             </div>
             <nav class="overlay-menu">
-                <ul>
-                    <li class="active"><a href="#">Nosotros</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Portafolio</a></li>
-                    <li><a href="#">Contacto</a></li>
+                <ul id="navList" onclick="myFunction(event)">
+                    <li class="active"><a href="#welcome-section">Nosotros</a></li>
+                    <li><a href="#description-services-section" onclick="onclickItem()">Servicios</a></li>
+                    <li><a href="#portfolio-section">Portafolio</a></li>
+                    <li><a href="#contact-section">Contacto</a></li>
                     <li class="social-links">
                         <a href="https://www.facebook.com/altoimpactopublicidad/" target="_blank">
                             <img src="{{asset('/img/icons/fa.png')}}" alt="">
@@ -50,7 +51,7 @@
                 </ul>
             </nav>
             <div class="cotization-link">
-                <a href="#">
+                <a href="#contact-section">
                     <h4>COTIZEMOS TU PROYECTO</h4>
                     <img src="img/avion.png" alt="">
                 </a>
@@ -96,10 +97,24 @@
 <script >
     var menu = document.getElementById("toggle");
     var overlay = document.getElementById("overlay");
+
     function onclickMenu(){
         menu.classList.toggle('active');
         overlay.classList.toggle('open');
     }
+
+    function onclickItem(){
+        overlay.classList.remove('open');
+        menu.classList.remove('active');
+    }
+
+    function myFunction(e) {
+        if (document.querySelector('#navList li.active') !== null) {
+            document.querySelector('#navList li.active').classList.remove('active');
+        }
+        e.target.parentNode.className = "active";
+    }
+
 </script>
 
 <script src="{{asset('/js/app.js')}}"></script>

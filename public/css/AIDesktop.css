@@ -7,8 +7,23 @@
 */
 
 @font-face {
+  font-family: "kestoy";
+  src: url("/fonts/KestoySelfie.ttf");
+}
+
+@font-face {
+  font-family: "brushsci";
+  src: url("/fonts/brushsci.ttf");
+}
+
+@font-face {
   font-family: "brandon-black";
   src: url("/fonts/Brandon_bld.otf");
+}
+
+@font-face {
+  font-family: "brandon-regular";
+  src: url("/fonts/Brandon_reg.otf");
 }
 
 @font-face {
@@ -19,6 +34,11 @@
 @font-face {
   font-family: "cocogose-italic";
   src: url("/fonts/CocogooseProItalic.ttf");
+}
+
+@font-face {
+  font-family: "cocogose-light-italic";
+  src: url("/fonts/CocogooseProLightItalic.ttf");
 }
 
 .brandon-black {
@@ -94,7 +114,7 @@
 }
 
 .logo-plain {
-  position: fixed;
+  position: absolute;
   top: 15px;
   left: 45px;
   z-index: 100;
@@ -415,33 +435,70 @@
 }
 
 .image-description {
-  margin-top: 0px;
+  margin-top: 60px;
+  text-align: center;
 }
 
-.image-description img {
-  margin-left: 20%;
-  height: 270px;
+.image-hand-pen img {
+  width: 113px;
+  height: 218px;
+}
+
+.image-foco img {
+  width: 120px;
+  height: 200px;
+  margin-bottom: 18px;
+}
+
+.image-brain img {
+  width: 120px;
+  height: 200px;
+  margin-bottom: 18px;
 }
 
 .title-description-skills {
-  margin-top: 50px;
-  width: 85%;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.title-description-skills h3 {
+  text-transform: uppercase;
+  color: white;
+  font-family: "cocogose-black";
+  font-size: 23px;
+  margin-bottom: -1px;
   text-align: right;
 }
 
 .title-description-skills h4 {
   text-transform: uppercase;
   color: white;
-  font-size: 12px;
   font-family: "cocogose-black";
+  font-size: 16px;
+  text-align: right;
 }
 
 .title-description-skills h5 {
+  margin-top: 8px;
   text-transform: uppercase;
   color: white;
-  font-size: 10px;
-  font-family: "cocogose-italic";
-  margin-top: -8px;
+  font-family: "cocogose-light-italic";
+  font-size: 8px;
+  text-align: center;
+}
+
+.foco-title h3,
+.foco-title h4 {
+  margin-right: 50px;
+}
+
+.team-container {
+  margin-right: 90px;
+}
+
+.brain-title h3,
+.brain-title h4 {
+  margin-right: 50px;
 }
 
 /* ABOUT PAGE */
@@ -449,14 +506,17 @@
 .message-about {
   margin-top: 40px;
   background-image: url("/img/fondo-3.png");
-  height: 670px;
+  height: 740px;
+  background-size: contain;
+  background-position-y: bottom;
 }
 
 .about-text-container p {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
-  font-weight: normal;
+  font-weight: bolder;
   text-align: justify;
+  margin-top: 30px;
 }
 
 .about-img-container img {
@@ -466,7 +526,7 @@
 }
 
 .about-title-container {
-  width: 80%;
+  width: 100%;
   margin-top: 100px;
 }
 
@@ -483,6 +543,15 @@
   text-transform: uppercase;
   text-align: right;
   margin-top: -12px;
+}
+
+.regtangle-type-1 {
+  text-align: right;
+}
+
+.regtangle-type-1 i {
+  color: #799a3b;
+  font-size: 80px;
 }
 
 /* CLIENTS PAGE */
@@ -560,8 +629,9 @@
   width: 100%;
 }
 
-.description-portfolio .row {
+.description-portfolio {
   background-color: #f66000;
+  min-height: 230px;
 }
 
 .title-portfolio {
@@ -570,7 +640,7 @@
 
 .title-portfolio h1 {
   font-family: "cocogose-black";
-  font-size: 45px;
+  font-size: 37px;
   color: white;
   text-transform: uppercase;
   margin-left: 35px;
@@ -578,7 +648,7 @@
 
 .title-portfolio h2 {
   font-family: "brandon-black";
-  font-size: 35px;
+  font-size: 25px;
   color: white;
   text-transform: uppercase;
   margin-left: 35px;
@@ -586,14 +656,46 @@
 }
 
 .text-description-portfolio {
-  margin-top: 90px;
+  margin-top: 60px;
+  width: 80%;
 }
 
 .text-description-portfolio p {
   color: white;
   font-family: "Montserrat", sans-serif;
   text-align: justify;
-  font-weight: normal;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.stamp-phrase {
+  margin-top: 70px;
+}
+
+.stamp-phrase p {
+  color: white;
+  font-family: "brushsci";
+  margin-bottom: -30px;
+}
+
+.stamp-phrase .block-simple-text {
+  font-size: 27px;
+}
+
+.stamp-phrase .block-resalt-text {
+  font-size: 42px;
+  margin-left: 75px;
+}
+
+.stamp-phrase .go-right {
+  margin-left: 110px;
+}
+
+.stamp-phrase .points-separator {
+  margin-left: -10px;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 /*FOOTER PAGES */
@@ -623,6 +725,12 @@
   float: right;
 }
 
+/* Cotization section */
+
+.cotization-panel {
+  margin-bottom: 30px;
+}
+
 .cotization-form-container {
   background-image: -webkit-gradient(linear, left bottom, right top, from(#464242), color-stop(#393637), color-stop(#2d2b2c), color-stop(#212021), color-stop(#161516), color-stop(#111010), color-stop(#090809), color-stop(#000000), color-stop(#000000), color-stop(#000000), color-stop(#000000), to(#000000));
   background-image: linear-gradient(to right top, #464242, #393637, #2d2b2c, #212021, #161516, #111010, #090809, #000000, #000000, #000000, #000000, #000000);
@@ -630,13 +738,12 @@
 }
 
 .form-img-airplane img {
-  margin-top: 200px;
-  width: 80%;
-  margin-bottom: 150px;
+  margin-top: 95px;
+  width: 100%;
 }
 
 .form-container {
-  margin-left: 50px;
+  margin-left: 110px;
 }
 
 .form-container .form-title {
@@ -646,15 +753,26 @@
 .form-container .form-title h1 {
   font-family: "cocogose-black";
   color: white;
-  font-size: 30px;
+  font-size: 32px;
 }
 
-.form-container .form-title h2 {
-  font-family: "brandon-black";
-  text-transform: uppercase;
+.form-container .form-title p {
+  font-family: "brandon-regular";
   color: white;
-  font-size: 25px;
+  font-size: 16px;
   margin-top: -10px;
+}
+
+.form-panel .title-form-data {
+  margin-top: 20px;
+  margin-bottom: -30px;
+}
+
+.form-panel h3 {
+  color: white;
+  text-transform: uppercase;
+  font-family: "brandon-black";
+  font-size: 20px;
 }
 
 .input-group {
@@ -671,8 +789,8 @@
   border: none;
   border-bottom: 1px solid white;
   background-color: transparent;
-  color: white;
-  font-family: "brandon-black";
+  color: #f66000;
+  font-family: "brushsci";
 }
 
 .form-control-custom + label {
@@ -680,9 +798,10 @@
   top: 10px;
   left: 3px;
   font-size: 16px;
-  color: #999999;
+  color: white;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+  font-family: "brandon-regular";
 }
 
 .form-control-custom:focus {
@@ -701,33 +820,164 @@
 }
 
 .form-control-custom.has-value:not(:focus) + label {
-  color: #999999;
+  color: white;
 }
 
 .cotization-button-form {
+  background-color: #f66000;
   color: white;
   font-size: 14px;
   text-transform: uppercase;
   font-weight: bold;
-  height: 25px;
-  padding: 0 26px 0 10px;
-  border: none;
-  background: linear-gradient(65rad, #F66000 80%, transparent 20%);
+  height: 30px;
+  padding: 5px 24px 26px 24px;
+  border-radius: 19px;
+  border: #f66000 solid;
 }
 
 textarea.form-control-custom {
-  height: 120px;
+  height: 60px;
+}
+
+/* MAP SECTION */
+
+.localization-map {
+  position: relative;
+}
+
+.complete-adress {
+  width: 100%;
+  margin-left: 50px;
+  background-color: #f66000;
+  color: white;
+  position: absolute;
+  bottom: 100px;
+  margin-bottom: -95px;
+}
+
+.complete-adress .phones-container {
+  margin-top: 20px;
+  font-family: "brandon-black";
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.complete-adress .phones-container .icon-container {
+  margin-left: 10%;
+}
+
+.complete-adress .phones-container .icon-container i {
+  margin-top: 10px;
+  font-size: 23px;
+}
+
+.complete-adress .phones-container .phone-data-container {
+  text-align: center !important;
+}
+
+.complete-adress .phones-container .phone-data-container h5 {
+  font-size: 15px;
+  margin-left: 30px;
+  margin-top: 12px;
+}
+
+.complete-adress .emails-container {
+  margin-top: 20px;
+  font-family: "brandon-black";
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.complete-adress .emails-container .icon-container {
+  margin-left: 10%;
+}
+
+.complete-adress .emails-container .icon-container i {
+  margin-top: 10px;
+  font-size: 23px;
+}
+
+.complete-adress .emails-container .email-data-container {
+  text-align: center;
+}
+
+.complete-adress .emails-container .email-data-container h5 {
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.complete-adress .emails-container .email-data-container h5:last-child {
+  margin-top: -8px;
+}
+
+.complete-adress .address-container {
+  margin-top: 20px;
+  font-family: "brandon-black";
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.complete-adress .address-container .icon-container {
+  margin-left: 10%;
+}
+
+.complete-adress .address-container .icon-container i {
+  margin-top: 10px;
+  font-size: 23px;
+}
+
+.complete-adress .address-container .email-data-container {
+  text-align: center;
+}
+
+.complete-adress .address-container .email-data-container h5 {
+  font-size: 15px;
+  margin-left: 10px;
+  margin-top: 12px;
+}
+
+.complete-adress a {
+  text-decoration: none;
+  color: white;
+}
+
+.complete-adress .cotization-plus {
+  margin-left: 10%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.complete-adress .cotization-plus h5 {
+  font-family: "brandon-black";
+  margin-bottom: -5px;
+}
+
+.complete-adress .cotization-plus span {
+  text-transform: uppercase;
+  font-family: "brandon-black";
+  font-size: 10px;
+}
+
+.complete-adress .cotization-plus .data-cotization {
+  background-image: url("/img/avion.png");
+  background-size: 84% 95%;
+  background-repeat: no-repeat;
 }
 
 /*CARDS*/
 
 .card-estrategy-direction {
   background-image: url("/img/fondo-6.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .card-estrategy-direction div .items-container-card {
-  margin-top: 20%;
-  margin-bottom: 15%;
+  margin-top: 24%;
+  margin-bottom: 20%;
   margin-left: -50px;
 }
 
@@ -741,41 +991,412 @@ textarea.form-control-custom {
 }
 
 .text-container-card {
-  margin-left: 20px;
+  margin-top: 100px;
 }
 
 .text-container-card div h1 {
   color: white;
   font-family: "cocogose-black";
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 53px;
+  margin-top: -8px;
+}
+
+.text-container-card .title-resalt {
+  background-color: white;
+  border-radius: 15px 0 0 15px;
+  height: 45px;
+}
+
+.text-container-card .title-resalt h1 {
+  font-size: 25px;
+  padding: 10px 10px 0px 10px;
+  color: #f66000;
+  margin: 0;
 }
 
 .text-container-card .content-card {
-  margin-top: -10px;
+  width: 86%;
 }
 
-.text-container-card .content-card .title-vertical {
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  width: 15%;
-}
-
-.text-container-card .content-card .title-vertical h1 {
-  margin-bottom: -10px;
-  margin-left: 12px;
-}
-
-.text-container-card .content-card .content-text {
-  width: 85%;
-}
-
-.text-container-card .content-card .content-text p {
+.text-container-card .content-card p {
   color: white;
   font-family: "Montserrat" sans-serif;
   text-align: justify;
+  font-weight: bold;
+}
+
+/* EXPLANATION PAGE */
+
+.graphic-design {
+  background-color: black;
+  height: auto;
+  min-height: 720px;
+}
+
+.graphic-design .items-explanation {
+  margin-top: 50px;
+}
+
+.graphic-design .items-explanation .img-container-graphic-design {
+  text-align: center;
+}
+
+.graphic-design .items-explanation .img-container-graphic-design img {
+  width: 350px;
+}
+
+.graphic-design .items-explanation .text-explanation {
+  margin-top: 30px;
+  text-align: right;
+}
+
+.graphic-design .items-explanation .text-explanation h1 {
+  font-family: "cocogose-black";
+  font-size: 55px;
+  text-transform: uppercase;
+}
+
+.graphic-design .items-explanation .text-explanation h4 {
+  font-family: "brandon-black";
+  text-transform: uppercase;
+  font-size: 23px;
+  margin-top: -8px;
+  margin-bottom: 40px;
+}
+
+.graphic-design .items-explanation .text-explanation p {
+  font-family: "Montserrat" sans-serif;
+  text-align: justify;
+  font-weight: bold;
+}
+
+.graphic-design .items-explanation .graphic-design-explanation {
+  color: white;
+}
+
+.graphic-design .items-explanation .graphic-design-explanation h4,
+.graphic-design .items-explanation .graphic-design-explanation h1 {
+  color: #f66000;
+}
+
+.print-description {
+  background-color: white;
+  height: auto;
+  min-height: 720px;
+}
+
+.print-description .items-explanation {
+  margin-top: 50px;
+}
+
+.print-description .items-explanation .img-container-graphic-design {
+  text-align: center;
+}
+
+.print-description .items-explanation .img-container-graphic-design img {
+  width: 350px;
+}
+
+.print-description .items-explanation .text-explanation {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.print-description .items-explanation .text-explanation h1 {
+  font-family: "cocogose-black";
+  font-size: 55px;
+  text-transform: uppercase;
+}
+
+.print-description .items-explanation .text-explanation h4 {
+  font-family: "brandon-black";
+  text-transform: uppercase;
+  font-size: 23px;
+  margin-top: -8px;
+  margin-bottom: 40px;
+}
+
+.print-description .items-explanation .text-explanation p {
+  font-family: "Montserrat" sans-serif;
+  text-align: justify;
+  font-weight: bold;
+}
+
+.print-description .items-explanation .graphic-design-explanation {
+  color: black;
+}
+
+.print-description .items-explanation .graphic-design-explanation h4,
+.print-description .items-explanation .graphic-design-explanation h1 {
+  color: #f66000;
+}
+
+.confections-instalations {
+  background-color: #f66000;
+  height: auto;
+  min-height: 720px;
+}
+
+.confections-instalations .items-explanation {
+  margin-top: 50px;
+}
+
+.confections-instalations .items-explanation .img-container-graphic-design {
+  text-align: center;
+}
+
+.confections-instalations .items-explanation .img-container-graphic-design img {
+  width: 350px;
+}
+
+.confections-instalations .items-explanation .text-explanation {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.confections-instalations .items-explanation .text-explanation h1 {
+  font-family: "cocogose-black";
+  font-size: 55px;
+  text-transform: uppercase;
+}
+
+.confections-instalations .items-explanation .text-explanation h4 {
+  font-family: "brandon-black";
+  text-transform: uppercase;
+  font-size: 23px;
+  margin-top: -8px;
+  margin-bottom: 40px;
+}
+
+.confections-instalations .items-explanation .text-explanation p {
+  font-family: "Montserrat" sans-serif;
+  text-align: justify;
+  font-weight: bold;
+}
+
+.confections-instalations .items-explanation .graphic-design-explanation {
+  color: white;
+}
+
+.confections-instalations .items-explanation .graphic-design-explanation h4,
+.confections-instalations .items-explanation .graphic-design-explanation h1 {
+  color: white;
+}
+
+.activations-btl {
+  background-color: black;
+  height: auto;
+  min-height: 720px;
+}
+
+.activations-btl .items-explanation {
+  margin-top: 0px;
+}
+
+.activations-btl .items-explanation .img-container-graphic-design {
+  text-align: center;
+}
+
+.activations-btl .items-explanation .img-container-graphic-design img {
+  width: 350px;
+}
+
+.activations-btl .items-explanation .text-explanation {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.activations-btl .items-explanation .text-explanation h1 {
+  font-family: "cocogose-black";
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.activations-btl .items-explanation .text-explanation h4 {
+  font-family: "brandon-black";
+  text-transform: uppercase;
+  font-size: 21px;
+  margin-top: -8px;
+  margin-bottom: 40px;
+}
+
+.activations-btl .items-explanation .text-explanation p {
+  font-family: "Montserrat" sans-serif;
+  text-align: justify;
+  font-weight: bold;
+}
+
+.activations-btl .items-explanation .graphic-design-explanation {
+  color: white;
+}
+
+.activations-btl .items-explanation .graphic-design-explanation h4,
+.activations-btl .items-explanation .graphic-design-explanation h1 {
+  color: white;
+}
+
+.advertising-advice {
+  background-color: white;
+  height: auto;
+  min-height: 720px;
+}
+
+.advertising-advice .items-explanation {
+  margin-top: 0px;
+}
+
+.advertising-advice .items-explanation .img-container-graphic-design {
+  text-align: center;
+}
+
+.advertising-advice .items-explanation .img-container-graphic-design img {
+  width: 90%;
+}
+
+.advertising-advice .items-explanation .text-explanation {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.advertising-advice .items-explanation .text-explanation h1 {
+  font-family: "cocogose-black";
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.advertising-advice .items-explanation .text-explanation h4 {
+  font-family: "brandon-black";
+  text-transform: uppercase;
+  font-size: 21px;
+  margin-top: -8px;
+  margin-bottom: 40px;
+}
+
+.advertising-advice .items-explanation .text-explanation p {
+  font-family: "Montserrat" sans-serif;
+  text-align: justify;
+  font-weight: bold;
+}
+
+.advertising-advice .items-explanation .graphic-design-explanation {
+  color: black;
+}
+
+.advertising-advice .items-explanation .graphic-design-explanation h4,
+.advertising-advice .items-explanation .graphic-design-explanation h1 {
+  color: #f66000;
+}
+
+/* CEO DISCURSO */
+
+.ceo-discurso {
+  background-color: black;
+  height: auto;
+  min-height: 610px;
+}
+
+.ceo-discurso .ceo-discurso-mark {
+  margin-top: 150px;
+  border: solid 2px #f66000;
+}
+
+.ceo-discurso .ceo-discurso-text {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+
+.ceo-discurso .ceo-discurso-text h1 {
+  font-family: "cocogose-black";
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.ceo-discurso .ceo-discurso-text h2 {
+  font-family: "cocogose-black";
+  font-size: 25px;
+  color: #f66000;
+  text-transform: uppercase;
+  margin-top: -10px;
+}
+
+.ceo-discurso .ceo-discurso-text p {
+  color: white;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 13px;
+  text-align: justify;
+}
+
+/* MISION VISION */
+
+.mision-vision {
+  height: auto;
+  min-height: 500px;
+  background-image: url("/img/fondo-4-b.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  background-size: cover;
+}
+
+.mision-vision .mision-container {
+  margin-top: 100px;
+  height: 140px;
+}
+
+.mision-vision .mision-container div {
+  background-image: url("/img/corchete.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 135px;
+}
+
+.mision-vision .mision-container h2 {
+  padding-top: 15px;
+  color: #f66000;
+  text-transform: uppercase;
+  font-family: "cocogose-black";
+  text-align: center;
+}
+
+.mision-vision .mision-container p {
+  font-family: "Montserrat";
+  font-weight: bold;
+  text-align: justify;
+  font-size: 11px;
+  margin-top: -5px;
+}
+
+.mision-vision .vision-container {
+  height: 140px;
+  margin-top: -150px;
+}
+
+.mision-vision .vision-container div {
+  background-image: url("/img/corchete.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 145px;
+  margin-left: 35%;
+}
+
+.mision-vision .vision-container h2 {
+  padding-top: 15px;
+  color: #f66000;
+  text-transform: uppercase;
+  font-family: "cocogose-black";
+  text-align: center;
+}
+
+.mision-vision .vision-container p {
+  font-family: "Montserrat";
+  font-weight: bold;
+  text-align: justify;
+  font-size: 11px;
+  margin-top: -5px;
 }
 

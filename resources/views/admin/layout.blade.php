@@ -72,7 +72,12 @@
                             <!-- Menu Footer-->
                             <li class="user-footer">
                                 <div class="pull-right">
-                                    <a href="#" class="btn btn-default btn-flat">Cerrar Sesion</a>
+                                    <form action="{{ route('logout') }}" method="post">
+                                        @csrf
+                                        <button class="btn btn-default btn-flat">
+                                            Cerrar Sesion
+                                        </button>
+                                    </form>
                                 </div>
                             </li>
                         </ul>

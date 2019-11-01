@@ -10,8 +10,23 @@ $white: #ffffff;
 
 // Fuentes Tipograficas
 @font-face {
+    font-family: "kestoy";
+    src: url("/fonts/KestoySelfie.ttf");
+}
+
+@font-face {
+    font-family: "brushsci";
+    src: url("/fonts/brushsci.ttf");
+}
+
+@font-face {
     font-family: "brandon-black";
     src: url("/fonts/Brandon_bld.otf");
+}
+
+@font-face {
+    font-family: "brandon-regular";
+    src: url("/fonts/Brandon_reg.otf");
 }
 
 @font-face {
@@ -22,6 +37,11 @@ $white: #ffffff;
 @font-face {
     font-family: "cocogose-italic";
     src: url("/fonts/CocogooseProItalic.ttf");
+}
+
+@font-face {
+    font-family: 'cocogose-light-italic';
+    src: url("/fonts/CocogooseProLightItalic.ttf")
 }
 
 .brandon-black {

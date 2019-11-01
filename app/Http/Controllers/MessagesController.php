@@ -16,7 +16,7 @@ class MessagesController extends Controller
             'description' => 'required'
         ]);
 
-        Mail::to('jluis.developer@gmail.com' )->send(new MessageReceived($message));
+        Mail::to('pruebas@studioaqp.com' )->send(new MessageReceived($message));
 
         return back()->with('flash', 'La cotizacion ah sido solicitada :)');
     }
